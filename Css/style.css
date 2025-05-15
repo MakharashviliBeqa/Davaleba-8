@@ -32,6 +32,7 @@ body{
     margin-top: -25px;
     font-family: Poppins-Regular;
     font-weight: 400;
+    font-size: 15px;
     color:#4D4F62;
 }
 
@@ -39,12 +40,13 @@ body{
 .Card-2,
 .Card-3{
     position: relative;
-    box-sizing: border-box;
     width: 350px;
     height: 250px;
     border-radius: 8px;
+    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 32px;
+    overflow: hidden;
 }
 
 .Card1-title,
@@ -68,4 +70,48 @@ body{
         position: absolute;
         bottom: 32px;
         right: 32px;
+}
+
+.Cards-Container{
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Card-1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #44D3D2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.Card-2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #EA5454;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.Card-3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #549EF2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
