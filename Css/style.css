@@ -38,6 +38,7 @@ body{
 .Card-1,
 .Card-2,
 .Card-3{
+    position: relative;
     box-sizing: border-box;
     width: 350px;
     height: 250px;
@@ -52,14 +53,19 @@ body{
     font-family: Poppins-Bold;
     font-weight: 600;
     color:#4D4F62;
-    letter-spacing: 0px;
+    font-size: 20px;
 }
 
-.Card-1,
-.Card-2,
-.Card-3 p{
+.Cards-Container p{
     font-family: Poppins-Regular;
     font-weight: 300;
     color:#4D4F62;
     letter-spacing: 0.09px;
+    font-size: 13px;
+}
+
+.Cards-Container img{
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
 }
